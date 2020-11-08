@@ -1,13 +1,12 @@
 import java.util.List;
 
-public class Conta extends Auditoria {
+public class Conta {
 	
 	private String nome;
 	private String documento;
 	private String conta;
 	private Banco banco;
 	private double saldoDebito;
-	private double saldoCredito;
 	private List<Transferencia> transferencias;
 	
 	public Conta(String nome, String documento, String conta, Banco banco, double saldoDebito, double saldoCredito) {
@@ -17,7 +16,7 @@ public class Conta extends Auditoria {
 		this.conta = conta;
 		this.banco = banco;
 		this.saldoDebito = saldoDebito;
-		this.saldoCredito = saldoCredito;
+
 	}
 	
 	public String getNome() {
@@ -50,12 +49,7 @@ public class Conta extends Auditoria {
 	public void setSaldoDebito(double saldoDebito) {
 		this.saldoDebito = saldoDebito;
 	}
-	public double getSaldoCredito() {
-		return saldoCredito;
-	}
-	public void setSaldoCredito(double saldoCredito) {
-		this.saldoCredito = saldoCredito;
-	}
+
 	public List<Transferencia> getTransferencias() {
 		return transferencias;
 	}
